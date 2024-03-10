@@ -9,3 +9,8 @@ Open a terminal or command prompt and install the Angular CLI globally
 by running the following command:
 ```bash
 npm install -g @angular/cli
+```
+## Create a New Angular Project
+```bash
+ng new my-angular-project
+```
