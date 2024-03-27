@@ -99,7 +99,7 @@ export class ChildComponent {
 }
 ```
 
--@Output:
+- @Output:
 
 Description: Used to define an output property in Angular.
 
@@ -117,7 +117,7 @@ export class ChildComponent {
 
 ```
 
--@ViewChild / @ContentChild:
+- @ViewChild / @ContentChild:
 
 Description: Used to query and access child components or elements in Angular.
 
@@ -135,7 +135,7 @@ export class ParentComponent {
 
 ```
 
-` @HostBinding / @HostListener:
+- @HostBinding / @HostListener:
 
 Description: Used to bind to host element properties or listen to host element events in Angular.
 
