@@ -17,7 +17,7 @@
 @HostBinding / @HostListener: Binds to host properties or listens to host events.
 ```
 
-- 1 @Component:
+-  @Component:
 
 Description: Used to define a new component in Angular.
 
@@ -33,3 +33,128 @@ export class ExampleComponent {
   // Component logic goes here
 }
 ```
+- @Directive:
+
+Description: Used to create a new directive in Angular.
+
+```typescript
+
+import { Directive, ElementRef } from '@angular/core';
+
+@Directive({
+  selector: '[appExampleDirective]'
+})
+export class ExampleDirective {
+  constructor(private el: ElementRef) {
+    this.el.nativeElement.style.backgroundColor = 'yellow';
+  }
+}
+```
+- @Pipe:
+
+Description: Used to define a new pipe in Angular.
+
+```typescript
+
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'examplePipe'
+})
+export class ExamplePipe implements PipeTransform {
+  transform(value: string): string {
+    return value.toUpperCase();
+  }
+}
+```
+- @Injectable:
+
+Description: Used to provide a service instance in Angular.
+
+```typescript
+
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ExampleService {
+  // Service logic goes here
+}
+```
+- @Input:
+
+Description: Used to define an input property in Angular.
+
+```typescript
+
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html'
+})
+export class ChildComponent {
+  @Input() message: string;
+}
+```
+
+-@Output:
+
+Description: Used to define an output property in Angular.
+
+```typescript
+
+import { Component, Output, EventEmitter } from '@angular/core';
+
+@Component({
+  selector: 'app-child',
+  templateUrl: './child.component.html'
+})
+export class ChildComponent {
+  @Output() notify: EventEmitter<string> = new EventEmitter<string>();
+}
+
+```
+
+-@ViewChild / @ContentChild:
+
+Description: Used to query and access child components or elements in Angular.
+
+```typescript
+
+import { Component, ViewChild, ElementRef } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  templateUrl: './parent.component.html'
+})
+export class ParentComponent {
+  @ViewChild('child') childComponent: ElementRef;
+}
+
+```
+
+` @HostBinding / @HostListener:
+
+Description: Used to bind to host element properties or listen to host element events in Angular.
+
+```typescript
+
+import { Directive, HostBinding, HostListener } from '@angular/core';
+
+@Directive({
+  selector: '[appExampleDirective]'
+})
+export class ExampleDirective {
+  @HostBinding('style.backgroundColor') backgroundColor: string;
+
+  @HostListener('mouseenter') onMouseEnter() {
+    this.backgroundColor = 'yellow';
+  }
+}
+```
+
+
+
+
