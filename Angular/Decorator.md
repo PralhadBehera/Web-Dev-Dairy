@@ -16,3 +16,20 @@
 @ViewChild / @ContentChild: Accesses child components or elements.
 @HostBinding / @HostListener: Binds to host properties or listens to host events.
 ```
+
+- 1 @Component:
+
+Description: Used to define a new component in Angular.
+
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-example',
+  templateUrl: './example.component.html',
+  styleUrls: ['./example.component.css']
+})
+export class ExampleComponent {
+  // Component logic goes here
+}
+```
