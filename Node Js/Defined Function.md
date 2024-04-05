@@ -13,17 +13,17 @@
 
 - **Arrow Functions:**
 
-'''javascript
+```javascript
 
 // Short and concise
 const add = (a, b) => a + b;
 
-// Inherit `this` value from surrounding code
+
 const obj = {
   value: 10,
   getValue: () => this.value // `this` refers to the global object, not `obj`
 };
 
-'''
+```
 
 --------
