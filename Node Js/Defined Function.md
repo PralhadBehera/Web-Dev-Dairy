@@ -9,3 +9,6 @@
 | Hoisted               | No                                      | Yes                                     | No                                    |
 | Constructor Function  | No                                      | Yes                                     | No                                    |
 | Best for              | Short, simple functions                 | Longer, complex functions               | Short, one-off functions              |
+
+
+- **Arrow Functions:**
