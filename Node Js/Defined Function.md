@@ -15,14 +15,11 @@
 
 ```javascript
 
-// Short and concise
-const add = (a, b) => a + b;
+const square=(x)=>{
+  return x*x;
+}
 
-
-const obj = {
-  value: 10,
-  getValue: () => this.value // `this` refers to the global object, not `obj`
-};
+console.log(square(5))
 
 ```
 
