@@ -23,4 +23,14 @@ console.log(square(5))
 
 ```
 
---------
+------------
+
+- **Normal Function:**
+
+```javascript
+function square(x){
+  return x*x;
+}
+
+console.log(square(5))
+```
