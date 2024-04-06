@@ -6,7 +6,7 @@ Buffer are used to create ,read , write  and manipulate the binary content direc
 
 ## **Creating  Buffer**
 
-1. Buffer.alloc()
+- **Buffer.alloc()**
 
 ```javascript 
 
