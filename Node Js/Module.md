@@ -18,6 +18,21 @@
 
 These are built-in modules provided by Node.js and are available out-of-the-box without needing to install anything extra
 
+*example*
+
+```javascript
+// Using the fs (file system) core module
+const fs = require('fs');
+
+fs.readFile('example.txt', 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error reading file:', err);
+    return;
+  }
+  console.log('File contents:', data);
+});
+```
+
 ----
 
 - **Local Modules:** 
@@ -30,4 +45,28 @@ These are modules created by developers and stored locally within the project di
 
 These are modules created by third-party developers and hosted on the npm registry or other package registries.
 
+*Example*
+
+Installing and using the express framework:
+
+```javacsript
+npm install express
+```
+
+Using express in a Node.js application:
+
+```javascript
+// index.js
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
+
+```
 -----
