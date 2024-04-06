@@ -8,7 +8,7 @@ Buffer are used to create ,read , write  and manipulate the binary content direc
 
  **Creating  Buffer**
 
-- **Buffer.alloc()**
+- Buffer.alloc()
 
 ```javascript 
 
@@ -18,4 +18,13 @@ console.log(buff1)
 
 ```
 
+- Buffer.from()
 
+```javascript
+
+let byteArray=[65, 66, 67, 68, 69];
+
+let buff=Buffer.from(byteArray);
+
+console.log(buff);
+```
