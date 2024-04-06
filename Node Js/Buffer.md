@@ -15,3 +15,6 @@ let buff1=Buffer.alloc(5);
 console.log(buff1)
 
 ```
+<span style="color: blue;">This text will be blue</span>
+
+# <span style="color: red;">This headline will be red</span>
