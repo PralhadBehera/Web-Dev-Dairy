@@ -24,4 +24,4 @@ npm install -g package-name
 
 ------------
 
-**Adding dependency in package Json**
+## **Adding dependency in package Json**
