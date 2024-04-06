@@ -16,4 +16,3 @@ console.log(buff1)
 
 ```
 
-# <span style="color: red;">This headline will be red</span>
