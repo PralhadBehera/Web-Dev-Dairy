@@ -14,10 +14,20 @@
 ------
 ------
 
-**Core Module**
+- **Core Module:**
 
 These are built-in modules provided by Node.js and are available out-of-the-box without needing to install anything extra
 
 ----
 
-**Local Modules:** These are modules created by developers and stored locally within the project directory. Local modules are typically defined in separate JavaScript files and imported using relative paths. Developers can use the module.exports object to expose functionality from these modules and require() to import them into other modules.
+- **Local Modules:** 
+
+These are modules created by developers and stored locally within the project directory. Local modules are typically defined in separate JavaScript files and imported using relative paths. Developers can use the module.exports object to expose functionality from these modules and require() to import them into other modules.
+
+----
+
+- **Third-party Modules:**
+
+These are modules created by third-party developers and hosted on the npm registry or other package registries.
+
+-----
