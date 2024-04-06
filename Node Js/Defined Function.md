@@ -34,3 +34,13 @@ function square(x){
 
 console.log(square(5))
 ```
+-----------
+ Variable based Function
+```javascript 
+const square = function(x){
+  return x*x;
+}
+
+console.log(square(5))
+
+```
