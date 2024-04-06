@@ -39,6 +39,28 @@ fs.readFile('example.txt', 'utf8', (err, data) => {
 
 These are modules created by developers and stored locally within the project directory. Local modules are typically defined in separate JavaScript files and imported using relative paths. Developers can use the module.exports object to expose functionality from these modules and require() to import them into other modules.
 
+
+**index.js**
+
+```javascript
+const {add,substract} = require("./script");
+
+console.log(add(5, 8));
+console.log(substract(8,5))
+```
+
+**script.js**
+```javascript
+function add(x, y) {
+  return x + y;
+}
+
+const substract=function(x,y){
+  return x-y;
+}
+
+module.exports = {add,substract};
+```
 ----
 
 - **Third-party Modules:**
