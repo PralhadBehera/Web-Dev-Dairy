@@ -1,5 +1,7 @@
 # Web server 
 
+-----
+
 ## Creating Web Server
 
  1. Install Node.js: First, you need to have Node.js installed on your machine. You can download and install it from the official Node.js website: https://nodejs.org
@@ -39,6 +41,7 @@ module.exports=router;
 
 ```
 
+-----
 
 ## Sending the HTTP request 
 
@@ -101,6 +104,8 @@ data.get('/data', async (req, res) => {
 module.exports = data; 
 
 ```
+
+------
 
 ## Handling HTTP requests
 
