@@ -44,7 +44,7 @@ module.exports=router;
 
 for senn the Http request we will use the axios library
 
-- - ```Axios```  is a popular JavaScript library that is commonly used for making HTTP requests from both the browser and Node.js environments. It simplifies the process of sending asynchronous HTTP requests to REST endpoints and performing CRUD operations (Create, Read, Update, Delete) with ease.
+- ```Axios```  is a popular JavaScript library that is commonly used for making HTTP requests from both the browser and Node.js environments. It simplifies the process of sending asynchronous HTTP requests to REST endpoints and performing CRUD operations (Create, Read, Update, Delete) with ease.
 
 - for this we will use ```jsonplaceholder``` 
 
@@ -73,32 +73,6 @@ app.listen(port, () => {
 *axios.js*
 
 ```javascript 
-// const axios = require('axios');
-// const express = require('express')
-// const jsonplaceholder = express.Router();
-// const fetchData = () => {
-//   const url = 'http://jsonplaceholder.typicode.com/posts/1';
-//   return axios.get(url)
-//     .then(response => {
-//       return response.data;
-//     })
-//     .catch(error => {
-//       throw error;
-//     });
-// };
-
-// jsonplaceholder.get('/post', async (req, res) => {
-//     try {
-//       const data = await fetchData(); // Fetch data asynchronously
-//       res.status(200).json(data); // Send the fetched data as JSON response
-//     } catch (error) {
-//       console.error('Error:', error);
-//       res.status(500).send('Internal Server Error'); // Handle errors gracefully
-//     }
-//   });
-
-
-// module.exports = fetchData; // Export a function that fetches data
 
 const axios = require('axios');
 const express = require('express');
