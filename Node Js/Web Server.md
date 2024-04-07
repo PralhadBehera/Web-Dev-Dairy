@@ -13,7 +13,7 @@ npm install express
 4. Create Your Server Script
 
 *server.js*
-
+```javascript
 const express = require('express');
 const router = require('./routers');
 const app = express();
@@ -22,9 +22,11 @@ app.use('/',router);
 app.listen(port,()=>{
     console.log(`Project runnig on port ${port}`);
 }) 
+```
 
 *router.js*
 
+```javascript 
 const express = require('express');
 const router = express.Router();
 router.get('/hello',(req,res)=>{
@@ -32,3 +34,5 @@ router.get('/hello',(req,res)=>{
 });
 
 module.exports=router;
+
+```
