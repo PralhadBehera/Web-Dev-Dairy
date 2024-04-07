@@ -4,6 +4,12 @@
 
  - Developers can use NPM to install packages globally or locally in their projects.
 
+
+# YARN
+
+- Yarn is a package manager for JavaScript, developed by Facebook in collaboration with Exponent, Google, and Tilde. It was created as an alternative to npm (Node Package Manager) to address some of its limitations and improve performance
+
+
  | Feature                            | Yarn                                       | npm                                                |
 |------------------------------------|--------------------------------------------|----------------------------------------------------|
 | Performance                        | Faster due to parallel downloads and caching | Slower than Yarn, but improved over time          |
