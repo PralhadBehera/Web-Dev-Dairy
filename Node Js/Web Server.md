@@ -40,9 +40,9 @@ module.exports=router;
 ```
 
 
-## sending the Http request 
+## Sending the HTTP request 
 
-for senn the Http request we will use the axios library
+- For sending the Http request we will use the axios library
 
 - ```Axios```  is a popular JavaScript library that is commonly used for making HTTP requests from both the browser and Node.js environments. It simplifies the process of sending asynchronous HTTP requests to REST endpoints and performing CRUD operations (Create, Read, Update, Delete) with ease.
 
@@ -56,7 +56,7 @@ for senn the Http request we will use the axios library
 const express = require('express');
 const hello = require('./hello');
 const bye = require('./bye');
-const data = require('./axios'); // Import fetchData function
+const data = require('./axios'); 
 const app = express();
 const port = 1337;
 
@@ -91,14 +91,17 @@ const fetchData = () => {
 
 data.get('/data', async (req, res) => {
     try {
-      const data = await fetchData(); // Call the imported function
-      res.status(200).json(data); // Send the fetched data as JSON response
+      const data = await fetchData(); 
+      res.status(200).json(data); 
     } catch (error) {
       console.error('Error:', error);
-      res.status(500).send('Internal Server Error'); // Handle errors gracefully
+      res.status(500).send('Internal Server Error'); 
     }
   });
 module.exports = data; 
 
 ```
 
+## Handling HTTP requests
+
+For Handling the request [click here](https://github.com/your-username/repository-name).
