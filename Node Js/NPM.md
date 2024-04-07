@@ -54,3 +54,9 @@ npm install lodash@4.17.21 --save
 ```javascript 
 yarn add lodash@4.17.21
 ```
+-------
+
+## Updating the package
+
+- ### Using npm:
+
