@@ -60,3 +60,62 @@ yarn add lodash@4.17.21
 
 - ### Using npm:
 
+1. Update Globally Installed Packages:
+
+```bash
+npm update -g
+```
+
+2. Update a Specific Package:
+
+```bash
+npm update lodash
+```
+
+3. Update Packages in package.json:
+
+```bash
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "express": "^4.17.1"
+  }
+}
+```
+
+4. Update all package
+
+```bash
+npm update
+```
+
+- ### Using Yarn:
+
+1. Update Globally Installed Packages:
+
+```bash
+yarn global upgrade
+```
+
+2. Update specific package
+
+```bash
+yarn upgrade lodash
+```
+
+3. Update Packages in package.json:
+
+```bash 
+{
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "express": "^4.17.1"
+  }
+}
+```
+4. Update all package
+
+```bash
+Update all package
+```
+--------
