@@ -14,4 +14,5 @@
     1. ```select random(1.23,2) as random;```
     2. ```select random(1.23) as random;```
 
-- 
+- POWER function returns m raised to the nth power.
+     ```select power(2,3) as power;```
