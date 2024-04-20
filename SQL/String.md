@@ -27,4 +27,4 @@ TRIM function removes all specified characters either from beginning or end of t
 - CONCATENATION
 || operator used to concatenate two or more strings
 
-```sql select first_name||" "||last_name as Full_Name from Customers``
+```sql select first_name||" "||last_name as Full_Name from Customers```
