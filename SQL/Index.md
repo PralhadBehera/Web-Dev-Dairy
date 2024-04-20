@@ -27,3 +27,7 @@ Here are some key points about indexes:
 
 7. Storage Overhead: Indexes consume additional storage space, as they are separate data structures stored alongside the table data.
 8. Considerations: While indexes can improve performance, creating too many indexes or indexes on columns with low selectivity can degrade performance. It's important to carefully consider the trade-offs and design indexes appropriately based on the workload and access patterns of the database.
+
+------
+
+sjhhksj
