@@ -23,7 +23,7 @@ Here are some key points about indexes:
 
 - Unique Index: Ensures that no two rows have the same values in the indexed columns.
 
-### Unique Index:
+- ### Unique Index:
 
 ```sql
 CREATE UNIQUE INDEX idx_unique_column ON table_name(column_name);```
