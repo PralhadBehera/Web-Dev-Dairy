@@ -42,6 +42,6 @@ Here are some key points about indexes:
 
 8. **Considerations**: While indexes can improve performance, creating too many indexes or indexes on columns with low selectivity can degrade performance. It's important to carefully consider the trade-offs and design indexes appropriately based on the workload and access patterns of the database.
 
-9. **Drop Index**: ```sql DROP INDEX index_name ON table_name;```
+9. **Drop Index**: ```sql   DROP INDEX index_name ON table_name;```
 
 
