@@ -9,9 +9,25 @@ Here are some key points about indexes:
 
 2. **Types of Indexes**:
 
-- ingle-column Index: Indexes created on a single column.
+- Single-column Index: Indexes created on a single column.
+
+### Single-column Index:
+
+```sql CREATE INDEX idx_column_name ON table_name(column_name);```
+
 - Composite Index: Indexes created on multiple columns.
+
+### Composite Index (Index on Multiple Columns):
+
+```sql CREATE INDEX idx_column1_column2 ON table_name(column1, column2);```
+
 - Unique Index: Ensures that no two rows have the same values in the indexed columns.
+
+### Unique Index:
+
+```sql
+CREATE UNIQUE INDEX idx_unique_column ON table_name(column_name);```
+
 - Clustered Index: Defines the physical order of the rows in the table based on the indexed column(s).
 - Non-Clustered Index: Creates a separate data structure that points to the rows in the table.
 
@@ -30,4 +46,6 @@ Here are some key points about indexes:
 
 ------
 
-sjhhksj
+## Example
+
+
