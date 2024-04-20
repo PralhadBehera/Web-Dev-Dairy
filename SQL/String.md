@@ -28,3 +28,9 @@ TRIM function removes all specified characters either from beginning or end of t
 || operator used to concatenate two or more strings
 
 Concatenation ```select first_name||" "||last_name as Full_Name from Customers```
+
+- SUBSTRING
+SUBSTRING function used to extract substring 
+from a string
+
+substring ``` sql select substring("Namaste Duniya " ,1,7) as substring;```
