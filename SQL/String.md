@@ -2,7 +2,7 @@
 
 - **LENGTH** : It is used count the character in string 
 
-```sql select length("Namaskaram SQL") as length;```
+Length Done```sql select length("Namaskaram SQL") as length;```
 
 - **UPPER/LOWER** : UPPER/LOWER function converts all the characters in the specified string to  uppercase/lowercase
 
