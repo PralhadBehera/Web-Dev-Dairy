@@ -11,19 +11,19 @@ Here are some key points about indexes:
 
 - Single-column Index: Indexes created on a single column.
 
-### Single-column Index:
+**Single-column Index:**
 
 ```sql CREATE INDEX idx_column_name ON table_name(column_name);```
 
 - Composite Index: Indexes created on multiple columns.
 
-### Composite Index (Index on Multiple Columns):
+** Composite Index (Index on Multiple Columns)**:
 
 ```sql CREATE INDEX idx_column1_column2 ON table_name(column1, column2);```
 
 - Unique Index: Ensures that no two rows have the same values in the indexed columns.
 
-- ### Unique Index:
+**Unique Index**:
 
 ```sql
 CREATE UNIQUE INDEX idx_unique_column ON table_name(column_name);```
