@@ -11,7 +11,7 @@
     ```SELECT RANDOM() AS random_number;```
 
 - ROUND : ROUND function rounds a number to a specified number of decimal places
-     ```select random(1.23,2) as random;```
-     ```select random(1.23) as random;```
+    1. ```select random(1.23,2) as random;```
+    2. ```select random(1.23) as random;```
 
 - 
