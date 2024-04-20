@@ -25,8 +25,7 @@ Here are some key points about indexes:
 
 - **Unique Index**:
 
-```sql
-CREATE UNIQUE INDEX idx_unique_column ON table_name(column_name);```
+```sql CREATE UNIQUE INDEX idx_unique_column ON table_name(column_name);```
 
 - Clustered Index: Defines the physical order of the rows in the table based on the indexed column(s).
 - Non-Clustered Index: Creates a separate data structure that points to the rows in the table.
