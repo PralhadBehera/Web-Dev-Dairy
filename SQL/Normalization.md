@@ -38,3 +38,25 @@ This table violates 1NF because the Courses column contains multiple values sepa
 | 1001    | 101       | Laptop      | 2        |
 | 1001    | 102       | Mouse       | 1        |
 | 1002    | 101       | Laptop      | 1        |
+
+
+In this table, ProductName is dependent only on ProductID, which is a part of the primary key (OrderID, ProductID). To achieve 2NF, we would split the table into two separate tables:
+
+Orders table:
+
+| OrderID | ProductID | Quantity |
+|---------|-----------|----------|
+| 1001    | 101       | 2        |
+| 1001    | 102       | 1        |
+| 1002    | 101       | 1        |
+
+Products table:
+
+| ProductID | ProductName |
+|-----------|-------------|
+| 101       | Laptop      |
+| 102       | Mouse       |
+
+Now, ProductName is fully functionally dependent on ProductID in the Products table, satisfying 2NF.
+
+------
