@@ -49,9 +49,8 @@ TRUNCATE TABLE table_name;
 
 - **RENAME** - 
   - Rename Table 
-  ```sql
-  ALTER TABLE old_table_name RENAME TO new_table_name;
-```
+  ```sql ALTER TABLE old_table_name RENAME TO new_table_name;
+  ```
 
 
   - Rename Index
