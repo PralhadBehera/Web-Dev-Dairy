@@ -12,7 +12,8 @@
 - AGE
   - Certainly! Let's assume you have a table named persons with the following structure:
 
-```sql CREATE TABLE persons (
+```sql 
+CREATE TABLE persons (
     person_id INT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
