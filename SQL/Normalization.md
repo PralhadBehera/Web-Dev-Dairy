@@ -26,3 +26,15 @@ This table violates 1NF because the Courses column contains multiple values sepa
 | 2         | Jane Smith     | Math    |
 | 3         | Michael Johnson| History |
 | 3         | Michael Johnson| Science |
+
+----
+
+- **Second Normal Form (2NF):** A table is in second normal form if it meets the criteria of 1NF and no non-prime attribute (attributes not part of the primary key) is dependent on only a portion of the primary key.
+
+   - Example: Consider a table representing orders and their items:
+
+| OrderID | ProductID | ProductName | Quantity |
+|---------|-----------|-------------|----------|
+| 1001    | 101       | Laptop      | 2        |
+| 1001    | 102       | Mouse       | 1        |
+| 1002    | 101       | Laptop      | 1        |
