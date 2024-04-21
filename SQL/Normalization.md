@@ -60,3 +60,41 @@ Products table:
 Now, ProductName is fully functionally dependent on ProductID in the Products table, satisfying 2NF.
 
 ------
+
+
+- **Third Normal Form (3NF):**
+  - A table is in third normal form if it meets the criteria of 2NF and no transitive dependency exists.
+  - Example:
+Consider a table storing information about books and their authors:
+
+| BookID | BookTitle | AuthorID | AuthorName |
+|--------|-----------|----------|------------|
+| 1      | Book A    | 101      | John Doe   |
+| 2      | Book B    | 102      | Jane Smith |
+| 3      | Book C    | 101      | John Doe   |
+
+In this table, AuthorName depends on AuthorID, and BookTitle depends on BookID. However, BookTitle also indirectly depends on AuthorID via AuthorName. To achieve 3NF, we would split the table into three separate tables:
+
+Books table:
+
+| BookID | BookTitle |
+|--------|-----------|
+| 1      | Book A    |
+| 2      | Book B    |
+| 3      | Book C    |
+
+Authors Table:
+
+
+| AuthorID | AuthorName |
+|----------|------------|
+| 101      | John Doe   |
+| 102      | Jane Smith |
+
+BookAuthors Table:
+
+| BookID | AuthorID |
+|--------|----------|
+| 1      | 101      |
+| 2      | 102      |
+| 3      | 101      |
