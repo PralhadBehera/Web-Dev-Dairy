@@ -10,7 +10,7 @@
   ```SELECT CURRENT_TIMESTAMP AS current_datetime;```
 
 - AGE
-  - Certainly! Let's assume you have a table named persons with the following structure:
+  1. Certainly! Let's assume you have a table named persons with the following structure:
 
 ```sql 
 CREATE TABLE persons (
@@ -20,7 +20,7 @@ CREATE TABLE persons (
     date_of_birth DATE); 
 ```
 
-   - And the table contains some sample data:
+   2. And the table contains some sample data:
 
    ```sql
    INSERT INTO persons (person_id, first_name, last_name, date_of_birth)
@@ -30,7 +30,7 @@ VALUES
     (3, 'Michael', 'Johnson', '1978-03-08');
   ```
 
-   - Now, you can use the DATEDIFF function in SQL Server to calculate the age of each person in the persons table:
+   3. Now, you can use the DATEDIFF function in SQL Server to calculate the age of each person in the persons table:
 
    ```sql
    SELECT 
