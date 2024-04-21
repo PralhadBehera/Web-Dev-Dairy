@@ -53,10 +53,7 @@ TRUNCATE TABLE table_name;
   ALTER TABLE old_table_name RENAME TO new_table_name;
 ```
 
-  - Rename Columns
-   ```sql
-ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
-```
+  - Rename Column
 
   - Rename Index
 ```sql
