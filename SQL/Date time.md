@@ -21,6 +21,7 @@ CREATE TABLE persons (
 ```
 
    - And the table contains some sample data:
+   
    ```sql
    INSERT INTO persons (person_id, first_name, last_name, date_of_birth)
 VALUES
