@@ -41,3 +41,24 @@ SELECT Name, Age FROM Students WHERE GPA > 3.5;
 ```sql
 DROP VIEW StudentSummary;
 ```
+
+- **TRUNCATE** - When you use the TRUNCATE statement in SQL, it deletes all the data from the table but keeps the table structure intact. It's a way to quickly remove all records from a table without changing its schema or metadata
+```sql
+TRUNCATE TABLE table_name;
+```
+
+- **RENAME** - 
+  - Rename Table 
+  ```sql
+  ALTER TABLE old_table_name RENAME TO new_table_name;
+```
+
+  - Rename Columns
+   ```sql
+ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
+```
+
+  - Rename Index
+```sql
+ALTER INDEX old_index_name RENAME TO new_index_name;
+```
