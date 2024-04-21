@@ -21,7 +21,7 @@ CREATE TABLE persons (
 ```
 
    - And the table contains some sample data:
-   
+
    ```sql
    INSERT INTO persons (person_id, first_name, last_name, date_of_birth)
 VALUES
@@ -30,5 +30,13 @@ VALUES
     (3, 'Michael', 'Johnson', '1978-03-08');
   ```
 
+   - Now, you can use the DATEDIFF function in SQL Server to calculate the age of each person in the persons table:
 
-  
+   ```sql
+   SELECT 
+    first_name,
+    last_name,
+    DATEDIFF(YEAR, date_of_birth, GETDATE()) AS age
+FROM 
+    persons;
+```
