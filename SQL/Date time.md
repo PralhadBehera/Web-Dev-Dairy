@@ -17,10 +17,9 @@ CREATE TABLE persons (
     person_id INT PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
-    date_of_birth DATE
-); 
+    date_of_birth DATE); 
 ```
-  - And the table contains some sample data:
+   - And the table contains some sample data:
    ```sql
    INSERT INTO persons (person_id, first_name, last_name, date_of_birth)
 VALUES
