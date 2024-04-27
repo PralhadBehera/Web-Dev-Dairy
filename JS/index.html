@@ -1,80 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body class="position-relative">
-    <div class="position-absolute top-50 start-50 translate-middle">
-      <button type="button" class="btn btn-primary" id="open">Open</button>
-      <button type="button" class="btn btn-primary ml-1" id="close">Close</button>
-      <button type="button" class="btn btn-primary ml-1" id="alert">Alert</button>
-      <button type="button" class="btn btn-primary ml-1" id="prompt">Prompt</button>
-      <button type="button" class="btn btn-primary ml-1" id="confirm">Confirm</button>
-      <button type="button" class="btn btn-primary ml-1" id="refresh">reload</button>
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <button type="button" class="btn btn-primary" id="open">Open</button>
+    <button type="button" class="btn btn-primary ml-1" id="close">Close</button>
+    <button type="button" class="btn btn-primary ml-1" id="alert">Alert</button>
+    <button type="button" class="btn btn-primary ml-1" id="prompt">Prompt</button>
+    <button type="button" class="btn btn-primary ml-1" id="confirm">Confirm</button>
+    <button type="button" class="btn btn-primary ml-1" id="refresh">Reload</button>
+    <button type="button" class="btn btn-primary ml-1" id="setTimeOut">setTimeout</button>
+    <button type="button" class="btn btn-primary ml-1" id="setInterval">setInterval</button>
+    <button type="button" class="btn btn-primary ml-1" id="location">Location</button>
+  </div>
 
-
-    </div>
-  
-    <script>
-      function openNewWindow() {
-        open('https://pralhad-behera-portfolio.netlify.app/', '_blank', 'width=1000,height=1000');
-      }
-  
-      function closeNewWindow() {
-        close();
-      }
-  
-      function alertWindow() {
-        alert("This is an alert");
-      }
-      
-      function promptWindow() {
-        let userInput = prompt("Enter the Text");
-        if (userInput !== null) {
-          console.log(`User input Text: ${userInput}`);
-        } else {
-          console.log(`User Pressed Cancel Key`);
-        }
+  <script>
+    function openNewWindow() {
+      open('https://pralhad-behera-portfolio.netlify.app/', '_blank', 'width=1000,height=1000');
     }
 
-        function confirmWindow(){
-          let result= confirm("This is Confirmation for procced");
-          if(result){
-            console.log("OK");
-          }
-          else{
-            console.log("Cancel")
-          }
-        }
-      
-        function  refresh(){
-            window.location.reload(true);
-        } 
-  
-      // Select the buttons and add event listeners
-      let openButton = document.getElementById("open");
-      openButton.addEventListener('click', openNewWindow);
-  
-      let closeButton = document.getElementById('close');
-      closeButton.addEventListener('click', closeNewWindow);
-  
-      let alertButton = document.getElementById("alert");
-      alertButton.addEventListener('click', alertWindow);
-  
-      let promptButton = document.getElementById('prompt');
-      promptButton.addEventListener('click', promptWindow);
+    function closeNewWindow() {
+      close();
+    }
 
-      let confirmButton= document.getElementById('confirm');
-      confirmButton.addEventListener('click', confirmWindow);
+    function alertWindow() {
+      alert("This is an alert");
+    }
 
-      let refreshButton=document.getElementById('refresh');
-      refreshButton.addEventListener('click',refresh)
-    </script>
+    function promptWindow() {
+      let userInput = prompt("Enter the Text");
+      if (userInput !== null) {
+        console.log(`User input Text: ${userInput}`);
+      } else {
+        console.log(`User Pressed Cancel Key`);
+      }
+    }
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    function confirmWindow() {
+      let result = confirm("This is Confirmation for proceed");
+      if (result) {
+        console.log("OK");
+      } else {
+        console.log("Cancel");
+      }
+    }
+
+    function refresh() {
+      window.location.reload(true);
+    }
+
+    function runAfterTwoSeconds() {
+      console.log("This will run after 2 seconds");
+    }
+
+    function runEveryTwoSeconds() {
+      console.log("This will run every 2 seconds");
+    }
+    function locationWindow(url) {
+      // Accessing properties of the provided URL
+      console.log("Current URL: " + url);
+      console.log("Protocol: " + url.protocol);
+      console.log("Hostname: " + url.hostname);
+      console.log("Port: " + url.port);
+      console.log("Pathname: " + url.pathname);
+      console.log("Query string: " + url.search);
+      console.log("Anchor: " + url.hash);
+    }
+
+    // Select the buttons and add event listeners
+    let openButton = document.getElementById("open");
+    openButton.addEventListener('click', openNewWindow);
+
+    let closeButton = document.getElementById('close');
+    closeButton.addEventListener('click', closeNewWindow);
+
+    let alertButton = document.getElementById("alert");
+    alertButton.addEventListener('click', alertWindow);
+
+    let promptButton = document.getElementById('prompt');
+    promptButton.addEventListener('click', promptWindow);
+
+    let confirmButton = document.getElementById('confirm');
+    confirmButton.addEventListener('click', confirmWindow);
+
+    let refreshButton = document.getElementById('refresh');
+    refreshButton.addEventListener('click', refresh);
+
+    let setTimeOutButton = document.getElementById('setTimeOut');
+    setTimeOutButton.addEventListener('click', function () {
+      setTimeout(runAfterTwoSeconds, 2000);
+    });
+
+    let setIntervalButton = document.getElementById('setInterval');
+    setIntervalButton.addEventListener('click', function () {
+      setInterval(runEveryTwoSeconds, 2000);
+    });
+
+    let locationButton=document.getElementById('location');
+    locationButton.addEventListener('click',function(){
+      let url = new URL('https://pralhad-behera-portfolio.netlify.app/');
+      locationWindow(url);
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
