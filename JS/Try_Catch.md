@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 <html lang="en">
 
@@ -70,3 +71,4 @@
 </body>
 
 </html>
+```
