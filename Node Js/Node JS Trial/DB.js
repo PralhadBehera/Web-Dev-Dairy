@@ -6,7 +6,6 @@ const { Client } = require('pg');
 
 const router = express.Router(); // Create a new router
 
-// Body parser middleware to parse JSON request body
 router.use(bodyParser.json());
 
 const client = new Client({
@@ -125,4 +124,4 @@ router.delete('/api/users/:id', (req, res) => {
     });
 });
 
-module.exports = router; // Export the router
+module.exports = router; 
