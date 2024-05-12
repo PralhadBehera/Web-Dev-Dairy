@@ -16,7 +16,7 @@ Eg. in a video game is like how you explore a new place. You don't need to see e
 
 ## Automaticate Lazy loading - 
 
-```html
+```cmd
 ng generate module products --route products --module app.module
 ```
 
@@ -27,3 +27,71 @@ Let's break down each command:
    - `products`: This is the name of the module being generated. In this case, it's called "products".
    - `--route products`: This flag tells Angular CLI to generate a routing configuration for the module with the specified route path. Here, the route path is "products".
    - `--module app.module`: This flag specifies the module where the generated module will be imported. In this case, it's importing the generated "products" module into the "app.module.ts" file.
+
+## Manually lazy Loading -
+
+1. Create the products.module.ts in a component.
+
+```html
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ProductsRoutingModule } from './products-routing.module';
+import { ProductsComponent } from './products.component';
+
+
+@NgModule({
+  declarations: [
+    ProductsComponent
+  ],
+  imports: [
+    CommonModule,
+    ProductsRoutingModule
+  ]
+})
+export class ProductsModule { }
+```
+
+2. Create the products-routing.ts in a component.
+
+```html 
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { ProductsComponent } from './products.component';
+
+const routes: Routes = [{ path: '', component: ProductsComponent }];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
+})
+export class ProductsRoutingModule { }
+```
+
+3. Add routing in app-routing.module.ts
+
+```html
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+
+
+const routes: Routes = [
+  {
+  path:"helloWorld" , component: HelloWorldComponent 
+  },
+  {
+    path:'DataBinding' , loadChildren: () => import('./databinding/databinding.module').then(m => m.DataBindingModule) 
+  },
+  { path: 'products', loadChildren: () => import('./products/products.module').then(m => m.ProductsModule) }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+```
+
+4. Removing the imports from the app.module.ts
+
