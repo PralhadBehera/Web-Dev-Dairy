@@ -1,4 +1,4 @@
-**Lazy loading**:- 
+# Lazy loading:- 
 Lazy loading involves loading elements or resources on-demand, typically when they are needed, rather than loading them upfront when the application starts. This approach reduces the initial load on the server and improves performance, as only necessary resources are fetches
 
 Eg. in a video game is like how you explore a new place. You don't need to see everything at once; you discover new areas as you go. Similarly, in a game, lazy loading means only loading the part of the game world you're in. As you move around, the game loads new areas just before you reach them, keeping your experience smooth and fast. It's like getting what you need when you need it, without waiting for everything to load upfront.
@@ -14,7 +14,7 @@ Eg. in a video game is like how you explore a new place. You don't need to see e
 | **Optimization** | May lead to unnecessary loading of unused resources.  | Optimizes resource usage by loading only what is needed.     |
 
 
-Automaticate Lazy loading - 
+## Automaticate Lazy loading - 
 
 ```html
 ng generate module products --route products --module app.module
