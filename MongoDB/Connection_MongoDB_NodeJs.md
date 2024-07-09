@@ -9,8 +9,8 @@ Certainly! Let's break down the code:
    - `mongoose`: This imports the Mongoose library, which provides a higher-level abstraction for interacting with MongoDB databases in Node.js.
 
 2. **MongoDB Connection URI**:
-   ```javascript
-   const express = require('express');
+```javascript
+ const express = require('express');
 const { connectToMongoDB, closeConnection } = require('./mongoDB');
 const insertDataRouter = require('./insertAPI');
 const findByNameAndAgeRouter = require('./findOneAPI');
